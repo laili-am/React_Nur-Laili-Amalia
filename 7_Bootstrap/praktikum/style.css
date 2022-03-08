@@ -1,0 +1,42 @@
+.text{
+    margin-top:25px;
+    font-family: 'Sarala', sans-serif;
+}
+.text1{
+    margin-top:18px;
+    font-family: 'Sarala', sans-serif;
+}
+.text2{
+    font-family: 'Sarala', sans-serif;
+}
+.text3{
+    margin-top:20px;
+    margin-left:300px;
+    font-family: 'Sarala', sans-serif;
+}
+footer{
+    background:white ;
+    height:50px;
+    width:100%;
+    color:black;
+    size: 12px;
+    position: fixed;
+    left:0;
+    right: 0;
+    bottom:0;
+    padding-top:40pxpx;
+
+}
+.contain{
+    background:black ;
+    height:250px;
+    width:100%;
+    color:white;
+    position:fixed;
+    size: 12px;
+    left:0;
+    right: 0;
+    bottom:0;
+    padding-top:15px;
+}
+
