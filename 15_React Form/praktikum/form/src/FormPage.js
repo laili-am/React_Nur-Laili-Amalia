@@ -17,7 +17,7 @@ export default function FormPage(){
     const [data, setData] = useState(dataKosong)
     const nameregex = /^[A-Z a-z]*$/g;
     const emailRegex = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/; 
-    const nomorHandphoneRegex = /^[0-9]$/g;
+    const nomorHandphoneRegex = /^[0-9]*$/g;
     const [errMsg, setErrMsg] =useState(baseError);
     const foto = useRef (null)
     const handleNama = (e) => {
