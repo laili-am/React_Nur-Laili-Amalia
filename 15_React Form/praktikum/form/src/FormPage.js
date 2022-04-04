@@ -32,7 +32,7 @@ export default function FormPage(){
             }else{
                 setErrMsg({
                     ...errMsg,
-                    nama:"Email Tidak Sesuai",
+                    nama:"Nama Lengkap Harus Berupa Huruf",
                 });
             }
             console.log(errMsg)
@@ -145,7 +145,7 @@ export default function FormPage(){
                 <p>{errMsg.email}</p> 
                 <p>{errMsg.handphone}</p>
             <label>
-                <input onClick={handleSubmit} type="submit" value="Sumbit"/>
+                <button onClick={handleSubmit} type="submit" value="Sumbit">Submit</button>
                 <button onClick={resetData}>Reset</button>
             </label>      
         </form>

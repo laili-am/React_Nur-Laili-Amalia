@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#e0edee;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #36989a;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color:#c2eaed;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }}
+  #mySidenav a {
+  margin-top: 75px;
+  position: absolute;
+  left: -130px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 150px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+#mySidenav a:hover {
+  left: 0;
+}
+#git {
+  top: 20px;
+  background-color: #8D6B81;
+}
+#uiux {
+  top: 80px;
+  background-color: #C098B2;
+}
+#figma {
+  top: 140px;
+  background-color: #DDAFB4;
+}
+#html{
+  top: 200px;
+  background-color: #F0CAB2;
+}
+#css {
+  top: 260px;
+  background-color: #F0E7AE;
+}
+#bootstrap {
+  top: 320px;
+  background-color:#B8E4C1;
+}
+#javascript {
+  top: 380px;
+  background-color: #B8E3E4;
+}
+#cleancode {
+  top: 440px;
+  background-color: #88CECF;
+}
+h1{
+  text-align: center;
+  vertical-align: center;
+  color:#36989a;
+}
+h5{
+  text-align: left;
+  vertical-align: left;
+  margin-left: 50px;
+  margin-right: 30px;
+  color:#36989a;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html" class="logo">Weekly Task 1</a>
+</div>
+<div id="mySidenav" class="sidenav">
+    <a href= "git.html" id="git">Git</a>
+    <a href= "introductionuiux.html" id="uiux">UI UX</a>
+    <a href= "figma.html" id="figma">Figma</a>
+    <a href= "html.html" id="html">HTML</a>
+    <a href= "css.html" id="css">CSS</a>
+    <a href= "bootstrap.html" id="bootstrap">Bootsrap</a>
+    <a href= "javascript.html" id="javascript">Javascript</a>
+    <a href= "cleancode.html" id="cleancode">Clean Code</a>
+  </div>
+
+<h1>Javascript</h1>
+<h5>
+<p>- Javascript adalah bahasa pemrograman yang High-Level, Scripting, Untyped, dan Interpreted.</p>
+<p>- Declaration atau deklarasi merupakan sebuah proses pembuatan variabel untuk menyimpan data.</p>
+<p>- Macam-macam pendeklarasian dalam javascript
+<ol><li>Var, jarang dipakai</li>
+<li>Let,dipakai disaat membutuhkan nilai yang dapat diubah </li>
+<li>Const, dipakai saat membutuhkan nilai yang tidak bisa di reassign, jadi pada melakukan deklarasi, kita harus memberikan nilai pada variabel tersebut.</li>
+</ol></p>
+<p>- Redeclaration atau deklarasi ulang adalah mendeklarasikan kembali variabel dengan nama yang sama. Disini hanya dapat dilakukan jika kita menggunakan var.</p>
+<p>- Reassignment adalah memberikan nilai baru pada sebuah variabel yang sebelumnya telah memiliki nilai sebelumnya. Disini hanya dapat dilakukan jika kita menggunakan var dan let.</p>
+<p>- Scoping adalah menentukan dimana variabel, fungsi, dan objek diatur dan dapat diakses dalam kode kita. Jadi variabel dikendalikan oleh lokasi deklarasi variabel.</p>
+<p>- Macam-macam scoping pada javascript
+<ol><li>Global, pada saat mendeklarasikan variabel, variabel tersebut dapat diakses pada setiap kondisi baik function maupun block.</li>
+<li>Function, variabel yang dideklarasikan disini, tidak dapat diakses dimanapun selain pada function tersebut.</li>
+<li>Block, dipengaruhi dengan tanda kurung kurawal</li></ol></p>
+<p>- Hoisting adalah pembuatan beberapa jenis variabel atau fungsi yang dapat diakses atau digunakan dalam kode sebelum dideklarasikan.
+<p>- Deklarasi var dan function adalah hoisted, jadi mereka dapat digunakan bahkan sebelum deklarasi itu sendiri terjadi. 
+<p>- Let dan const tidak hoisted, jadi mereka tidak dapat digunakan bahkan sebelum deklarasi terjadi.
+<p>- Type data javascript
+<ol>
+  <li>Primitive<p>Unit pemrosesan terkecil dan elemen paling sederhana yang tersedia dalam bahasa pemrograman.
+    Type data primitive antara lain String, Boolean, Number, bigInt, Undefined, Null, Symbol (ES6).</p></li>
+  <li>Objects<p>Unit yang menyimpan properti dan fungsi (method)</p></li>
+</ol>
+<p>- Type data objects antara lain object, array, function, date, set, map, weak set, weak map.</p>
+<p>- Destructuring adalah ekspresi dari javascript yang memungkinkan untuk menyalin nilai dari array, atau properti dari objek, ke dalam variabel yang berbeda.</p>
+<p>- Spread syntax dapat digunakan ketika semua elemen dari object atau array perlu dimasukkan ke dalam semacam daftar.</p>
+<p>- Method merupakan sebuah fungsi yang terkait dengan object, memuat programnya sesederhana mungkin sesuai kegunaan masing-masing.</p>
+<p>- Normal flow adalah pengeksekusian statement dari atas ke bawah atau kiri ke kanan secara berurutan.</p>
+<p>- Control flow adalah mengatur alur eksekusi pada statement atau jalannya program sesuai dengan keinginan kita.</p>
+<p>- Cara melakukan control flow kita dapat menggunakan
+  <ol>
+    <li>Pengulangan (loop/iterasi)<p>For, While, Do While</p></li>
+    <li>Pengkondisian (percabangan)<p>If..else, Switch, Block, Try..Catch, Break, Continue, Throw</p></li>
+  </ol>
+  </p>
+<p>- Function pada Javascript merupakan sebuah object karena memiliki properti dan juga method, function sendiri digunakan untuk melakukan serangkaian komputasi/prosedur yang dapat digunakan berulang kali.</p>
+<p>- Synchronous adalah mengeksekusi setiap perintah satu persatu sesuai urutan kode yang dituliskan.</p>
+<p>- Asynchronous adalah hasil eksekusi atau output tidak selalu berdasarkan urutan kode, tetapi berdasarkan waktu proses.</p>
+<p>- Class merupakan prototipe dari suatu object yang akan kita buat.</p>
+<p>- Constructor adalah method di dalam class yang akan selalu terpanggil pertama kali ketika membuat object.</p>
+<p>- Method adalah sebuah fungsi yang berada di dalam class.</p>
+<p>- Attribute adalah kumpulan dari variabel yang membentuk object yang dimiliki oleh suatu class.</p>
+<p>- Extend adalah kelas anak dari kelas induk.</p>
+<p>- Document Object Model atau DOM adalah API yang digunakan untuk HTML yang mempresentasikan halaman web pada suatu dokumen menjadi sebuah object.</p>
+</h5>
+
+</body>
+</html>

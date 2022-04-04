@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#d7e8e8;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #3b7d7e;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color:#b4d3d3;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }}
+  #mySidenav a {
+  margin-top: 75px;
+  position: absolute;
+  left: -130px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 150px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+#mySidenav a:hover {
+  left: 0;
+}
+#git {
+  top: 20px;
+  background-color: #8D6B81;
+}
+#uiux {
+  top: 80px;
+  background-color: #C098B2;
+}
+#figma {
+  top: 140px;
+  background-color: #DDAFB4;
+}
+#html{
+  top: 200px;
+  background-color: #F0CAB2;
+}
+#css {
+  top: 260px;
+  background-color: #F0E7AE;
+}
+#bootstrap {
+  top: 320px;
+  background-color:#B8E4C1;
+}
+#javascript {
+  top: 380px;
+  background-color: #B8E3E4;
+}
+#cleancode {
+  top: 440px;
+  background-color: #88CECF;
+}
+h1{
+  text-align: center;
+  vertical-align: center;
+  color:#3b7d7e;
+}
+h5{
+  text-align: left;
+  vertical-align: left;
+  margin-left: 50px;
+  margin-right: 30px;
+  color:#3b7d7e;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html" class="logo">Weekly Task 1</a>
+</div>
+<div id="mySidenav" class="sidenav">
+    <a href= "git.html" id="git">Git</a>
+    <a href= "introductionuiux.html" id="uiux">UI UX</a>
+    <a href= "figma.html" id="figma">Figma</a>
+    <a href= "html.html" id="html">HTML</a>
+    <a href= "css.html" id="css">CSS</a>
+    <a href= "bootstrap.html" id="bootstrap">Bootsrap</a>
+    <a href= "javascript.html" id="javascript">Javascript</a>
+    <a href= "cleancode.html" id="cleancode">Clean Code</a>
+  </div>
+<h1>Clean Code</h1>
+<h5>
+<p>- Clean Code adalah istilah dari sintaks atau code yang mudah untuk dibaca, dipahami, dan diubah oleh programmer. Clean code tidak selalu berbentuk code yang dapat berjalan dengan baik, yang terpenting mudah dibaca dan dipahami.
+<p>- Kenapa clean code
+  <ol>
+    <li>Work Collaboration</li>
+    <li>Feature Development</li>
+    <li>Faster Development</li>
+  </ol></p>
+<p>- Karakteristik Clean Code
+  <ol>
+    <li>Mudah dipahami</li>
+    <li>Mudah dieja dan dicari</li>
+    <li>Singkat namun mendeskripsikan konteks</li>
+    <li>Konsisten</li>
+    <li>Hindari penambahan konteks yang tidak perlu</li>
+    <li>Komentar</li>
+    <li>Food function</li>
+    <li>Gunakan konvensi</li>
+    <li>Formatting</li>
+  </ol>
+</p>
+<p>- Cara melakukan formatting yang baik
+  <ol>
+    <li>Lebar baris code 80-120 karakter</li>
+    <li>Satu class 300-500 baris</li>
+    <li>Baris code yang berhubungan saling berdekatan</li>
+    <li>Dekatkan fungsi dengan pemanggilnya</li>
+    <li>Deklarasi variabel berdekatan dengan penggunanya</li>
+    <li>Perhatikan indentasi</li>
+    <li>Menggunakan prettier atau formatter</li>
+  </ol>
+</p>
+<p>- Prinsip clean code
+  <ol>
+    <li>Keep it so simple (KISS)<p>Hindari membuat fungsi yang dibuat untuk melakukan a, sekaligus memodifikasi B, mengecek fungsi C, dst</p></li>
+    <li>Don't Repeat Yourself (DRY)<p>Duplikasi code terjadi karena sering copy paste. Untuk menghindari duplikasi code,buatlah fungsi yang dapat digunakan secara berulang-ulang. </p></li>
+  </ol></p>
+<p>- Tips untuk selalu KISS
+  <ol>
+    <li>Fungsi atau class harus kecil</li>
+    <li>Fungsi dibuat untuk melakukan satu tugas saja</li>
+    <li>Jangan gunakan terlalu banyak argumen pada fungsi</li>
+    <li>Harus diperhatikan untuk mencapai kondisi yang seimbang, kecil, dan jumlahnya minimal</li>
+  </ol>
+</p>
+<p>- Teknik Refactoring 
+  <ol>
+    <li>Membuat sebuah abstraksi </li>
+    <li>Memecah kode dengan fungsi/class</li>
+    <li>Perbaiki penamaan dan lokasi kode</li>
+    <li>Deteksi kode yang memiliki duplikasi</li>
+  </ol>
+</p>
+</h5>
+</body>
+</html>
