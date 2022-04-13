@@ -4,7 +4,7 @@ export default function FormPage(){
     const dataKosong = {
         nama:"",
         email:"",
-        handphone:0,
+        handphone:"",
         pendidikan:"",
         kelas: "",
         harapan: ""
@@ -15,31 +15,32 @@ export default function FormPage(){
         handphone: "",
     }     
     const [data, setData] = useState(dataKosong)
-    const nameregex = /^[A-Z a-z]*$/g;
-    const emailRegex = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/; 
-    const nomorHandphoneRegex = /^[0-9]*$/g;
+    const regexNama = /^[A-Za-z ]*$/
+    const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; 
     const [errMsg, setErrMsg] =useState(baseError);
     const foto = useRef (null)
-    const handleNama = (e) => {
+    const harapan = useRef('')
+
+    const handleNama = e => {
         const name = e.target.name;
         const value = e.target.value;
         if(name === "nama"){
-            if(nameregex.test(value)){
+            if(regexNama.test(value)){
                 setErrMsg({
                     ...errMsg,
-                    nama:"",
-                });
+                    nama:'Nama Lengkap Harus Berupa Huruf'
+                })
             }else{
                 setErrMsg({
                     ...errMsg,
-                    nama:"Nama Lengkap Harus Berupa Huruf",
-                });
+                    nama:'',
+                })
             }
             console.log(errMsg)
         }
         setData({
             ...data, 
-            [name]: value
+            nama: value
         })
         // console.log("data", data)
     }
@@ -83,15 +84,15 @@ export default function FormPage(){
         const name = e.target.name;
         const value = e.target.value;
         if(name === "handphone"){
-            if(nomorHandphoneRegex.test(value)){
+            if(value.length < 9 || value.length > 14){
                 setErrMsg({
                     ...errMsg,
-                    handphone:"",
+                    handphone:"No Handphone Tidak Sesuai",
                 });
             }else{
                 setErrMsg({
                     ...errMsg,
-                    handphone:"No Handphone Tidak Sesuai",
+                    handphone:"",
                 });
             }
             console.log(errMsg)
