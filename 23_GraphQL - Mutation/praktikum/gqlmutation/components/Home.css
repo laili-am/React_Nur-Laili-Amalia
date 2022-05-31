@@ -1,0 +1,21 @@
+tr,
+td {
+  border: 1px solid black;
+}
+.removeBorder {
+  border: none;
+}
+.inputan {
+  margin-top: 25px;
+}
+.searchbox {
+  border: 1px solid black;
+  border-radius: 12px;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: white;
+}
+.searchbox > div {
+  padding: 10px;
+}
