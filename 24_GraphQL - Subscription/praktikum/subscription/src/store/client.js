@@ -3,7 +3,7 @@ import { getMainDefinition } from "@apollo/client/utilities";
 import { GraphQLWsLink } from "@apollo/client/link/subscriptions";
 import { createClient } from "graphql-ws";
 
-const httpLink = new ApolloClient({
+const httpLink = new HttpLink({
   uri: "https://apparent-urchin-65.hasura.app/v1/graphql",
   headers: {
     "x-hasura-admin-secret":
